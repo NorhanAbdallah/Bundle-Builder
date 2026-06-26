@@ -1,0 +1,14 @@
+{
+  "name": "bundle-builder-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "test": "npm --prefix backend run test && npm --prefix frontend run test",
+    "lint": "npm --prefix backend run lint && npm --prefix frontend run lint",
+    "format": "npm --prefix backend run format && npm --prefix frontend run format"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
