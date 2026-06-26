@@ -136,7 +136,7 @@ export function BundleBuilderPage() {
       </section>
 
       <aside className={styles.reviewPanel}>
-        <h2>Your build so far</h2>
+        <h2>Your security system</h2>
         <p>{totalSelected} items selected</p>
         <ul className={styles.reviewList}>
           {items.map((option) => (
