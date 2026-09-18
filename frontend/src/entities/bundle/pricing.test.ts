@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { calculateTotals, formatMoney } from "./pricing";
+import { calculateTotals, estimateMonthlyPayment, formatMoney } from "./pricing";
 import type { ProductOption } from "./types";
 
 const sampleItems: ProductOption[] = [
@@ -26,5 +26,10 @@ describe("pricing", () => {
 
   it("formats money", () => {
     expect(formatMoney(19.5)).toBe("$19.50");
+  });
+
+  it("estimates monthly financing", () => {
+    expect(estimateMonthlyPayment(120)).toBe(10);
+    expect(estimateMonthlyPayment(0)).toBe(0);
   });
 });

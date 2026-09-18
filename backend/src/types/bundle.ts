@@ -20,6 +20,8 @@ export interface BundleStep {
   id: string;
   title: string;
   category: BundleCategory;
+  /** When set, the step shows products from all listed categories. */
+  categories?: BundleCategory[];
   defaultExpanded?: boolean;
 }
 

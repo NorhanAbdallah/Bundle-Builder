@@ -6,10 +6,16 @@
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: "Manrope", "Segoe UI", sans-serif;
   color: #0b0d10;
+  background: #f0f4f7;
 }
 
 #root {
   min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
 }

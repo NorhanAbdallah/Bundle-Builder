@@ -2,12 +2,28 @@
 
 Bundle Builder take-home project using React + TypeScript + Vite on the frontend and Express + TypeScript on the backend.
 
+## Highlights for reviewers
+
+- Guided multi-step accordion with **Next step** navigation
+- Exclusive plan selection, color swatches, and selected-card states
+- Sticky review panel grouped by category with live savings + financing estimate
+- Quantities and colors persisted in `localStorage`
+- Accessible controls, loading skeleton, empty/error/checkout states
+- Vitest + RTL coverage and GitHub Actions CI
+
+## Live Demo
+
+After deploying on Render, add your public frontend URL here:
+
+- Demo: `https://YOUR-FRONTEND.onrender.com`
+- API health: `https://YOUR-API.onrender.com/api/health`
+
 ## Tech Stack
 
 - Frontend: React, TypeScript, Vite, CSS Modules, Zustand
 - Backend: Express, TypeScript
 - Testing: Vitest, React Testing Library, Supertest
-- Quality: ESLint, Prettier
+- Quality: ESLint, Prettier, GitHub Actions CI
 
 ## Project Structure
 
@@ -45,6 +61,14 @@ Bundle Builder take-home project using React + TypeScript + Vite on the frontend
 - `GET /api/health`
 - `GET /api/bundle/options`
 - `GET /api/bundle/config`
+
+## Quality Checks
+
+CI runs on every push/PR to `main`:
+
+- lint
+- unit/component/API tests
+- production build
 
 ## Commands
 
