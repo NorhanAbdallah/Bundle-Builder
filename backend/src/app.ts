@@ -4,7 +4,7 @@ import { bundleConfig, bundleOptions } from "./data/bundleData.js";
 
 export const app = express();
 
-app.use(cors({ origin: ["http://localhost:5173"] }));
+app.use(cors({ origin: true }));
 app.use(express.json());
 
 app.get("/api/health", (_req, res) => {

@@ -1,6 +1,7 @@
 import type { BundleConfigResponse, BundleOptionsResponse } from "../../../entities/bundle/types";
 
-const apiBase = "http://localhost:4000/api/bundle";
+// Local: Vite proxy (`/api`). Production: set VITE_API_BASE to your Render API URL.
+const apiBase = import.meta.env.VITE_API_BASE ?? "/api/bundle";
 
 async function getJson<T>(url: string): Promise<T> {
   const res = await fetch(url);

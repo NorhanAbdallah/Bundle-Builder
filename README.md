@@ -24,7 +24,21 @@ Bundle Builder take-home project using React + TypeScript + Vite on the frontend
 2. Start frontend + backend together:
    - `npm run dev`
 3. Frontend runs at `http://localhost:5173`
-4. Backend runs at `http://localhost:4000`
+4. Backend runs at `http://localhost:4001`
+
+## Deploy on Render (Free)
+
+1. Deploy backend as a **Web Service**
+   - Root Directory: `backend`
+   - Build Command: `npm install && npm run build`
+   - Start Command: `npm start`
+2. Copy the backend URL (example: `https://bundle-builder-api.onrender.com`)
+3. Deploy frontend as a **Static Site**
+   - Root Directory: `frontend`
+   - Build Command: `npm install && npm run build`
+   - Publish Directory: `dist`
+   - Env var: `VITE_API_BASE=https://YOUR-API-URL/api/bundle`
+4. Share the frontend URL
 
 ## API Endpoints
 
